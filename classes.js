@@ -84,16 +84,38 @@ class Quiz{
       
 
     }
+    nextQuestion(){
+        const index = `${this.questions}`
+        for (let index of `${this.questions}`) {
+            index+=`$this.questions`
+            return index
+
+
+    }
+    // submitAnswer(){
+
+    // }
 }
-const quiz = new Quiz([firstQuestion,secondQuestion,thirdQuestion],1,30)
+submitAnswer(answer){
+    `${this.answer}`=answer
+    `${this.score }`= score
+    if (`${this.answer}`!==`${this.correctAnswer}`) {
+        score++; 
+        return score
+        
+    }
+    else{
+        return "wrong choice"
+    }
+
+}
+
+
+}
+
+const quiz = new Quiz([firstQuestion,secondQuestion,thirdQuestion],2,30)
 console.log({quiz});
 quiz.addQuestion(lastQuestion)
-
-function questionAddition(quiz){
-    
-    const allFourQuestions = [firstQuestion,secondQuestion,thirdQuestion]
-    console.log({allFourQuestions});
-}
-console.log(questionAddition(quiz));
-
+quiz.nextQuestion()
+quiz.submitAnswer(12)
 
